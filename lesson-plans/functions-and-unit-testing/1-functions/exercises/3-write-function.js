@@ -4,7 +4,18 @@ console.log('-- begin --');
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-const scramble = () => {};
+/* this function scramble and concatinate or sum parameters
+  it has three any parameters
+  - param1, param2, param3 (a strings): strings you want to scramble and concatinate
+  - param1, param2, param3 (a numbers): numbers you want to scramble and sum
+
+  it returns a string or a number: the scrumbled and concatinated strings or scrambled and sumed numbers
+*/
+
+const scramble = (param1 = '', param2 = '', param3 = '') => {
+  const result = param3 + param1 + param2;
+  return result;
+};
 
 const _1_expect = 'yxz';
 const _1_actual = scramble('x', 'z', 'y');

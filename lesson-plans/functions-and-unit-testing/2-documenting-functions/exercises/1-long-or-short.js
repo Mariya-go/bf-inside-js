@@ -3,12 +3,13 @@
 console.log('-- begin --');
 
 /**
- * _
+ * This estimate a string length and returns a two type of string: 'short' or 'long', depends on length of parameters.
  *
- * @_ {_} _ - _
- * @_ {_} _ - _
- * @_ {_} _
+ * @param {string} text - string for estimate
+ * @param {number} cutoff - criticsl point for estimation
+ * @returns {string} - a string with 'short' or 'long'
  */
+
 const longOrShort = (text, cutoff) => {
   if (text.length < cutoff) {
     return 'short';

@@ -3,7 +3,11 @@
 console.log('-- begin --');
 
 /**
- *
+ * This function count, how many certan characters contained in string
+ * 
+ * @param {string} text - string for check
+ * @param {string} toCount - character to check
+ * @returns {number} a number of checking characters in string
  */
 const countCharacter = (text, toCount) => {
   if (toCount.length !== 1) {
