@@ -12,10 +12,15 @@ for (const letter of school) {
 
 // write this for...of loop as a for loop:
 
-for (_; _; _) {}
+for (let i = 0; i < school.length; i++) {
+  console.log(school[i]);
+}
 
 // write this for loop as a while loop:
-
-while (_) {}
+let i = 0;
+while (i !== school.length - 1) {
+  console.log(school[i]);
+  i++;
+}
 
 console.log('-- end --');
