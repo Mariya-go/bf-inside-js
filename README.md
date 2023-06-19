@@ -329,5 +329,10 @@
 
 - [day 1](https://youtu.be/FDJFXPhU8iU)
 - [day 2](https://youtu.be/7ulPCWBQc-4)
+- [day 3](https://youtu.be/hBx2KADvxZI)
+- [day 4](https://youtu.be/M1qog0vPHDw)
+- [day 5](https://youtu.be/NsMNs-B5rgQ)
+
+#### Week 2
 
 </details>
