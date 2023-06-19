@@ -15,17 +15,17 @@ console.log('-- begin --');
 
   for loops are designed for stepping
     i is the stepper in this exercise
-
+ 
 
   fill in the loop condition and update the stepper variable
 
 */
 
 const holiday = 'winter solstice';
-const message = '_' + holiday;
+const message = ' days remaining until ' + holiday;
 
 let tweet = '';
-for (let daysToHoliday = 14; _; _) {
+for (let daysToHoliday = 14; daysToHoliday > 0; daysToHoliday--) {
   tweet = daysToHoliday + message;
   console.log(tweet);
 }

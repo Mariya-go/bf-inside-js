@@ -4,7 +4,7 @@
 
 console.log('-- begin --');
 
-// are there any unreachable paths?
+// are there any unreachable paths? 
 
 const value1 = true;
 const value2 = true;
@@ -20,6 +20,6 @@ if (value1 && !value2) {
   path = 'else';
 }
 
-console.assert(path === _);
+console.assert(path === 'else');
 
 console.log('-- end --');
