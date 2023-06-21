@@ -9,16 +9,19 @@ while (isTooShort) {
   console.log('userInput:', typeof userInput, userInput);
 
   // continue if the user did not input anything
-  ___;
-
-  // continue if the input is too short (5 characters or less)
-  if (_) {
-    alert('too short');
-    _;
+  if (userInput === null || userInput === '') {
+    alert('it is not anything');
+    continue;
+  } else {
+    // continue if the input is too short (5 characters or less)
+    if (userInput.length <= 5) {
+      alert('too short');
+      continue;
+    } else {
+      // toggle the flag variable, telling the loop to finish
+      isTooShort = false;
+    }
   }
-
-  // toggle the flag variable, telling the loop to finish
-  isTooShort = _;
 }
 
 const finalMessage =

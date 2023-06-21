@@ -5,4 +5,13 @@
  * @param {string[]} arr - the array of strings
  * @returns {number[]} an array containing numbers that aren't NaN
  */
-export const numberyNumberify = () => {};
+export const numberyNumberify = (arr) => {
+  const newArr = [];
+  arr.forEach((item) => {
+    item = Number(item);
+        if (isNaN(item) === false) {
+      newArr.push(item);
+    }
+  })
+  return newArr;
+};
