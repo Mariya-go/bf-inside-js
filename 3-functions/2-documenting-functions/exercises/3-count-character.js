@@ -5,8 +5,12 @@
 console.log('-- begin --');
 
 /**
- *
+ * This is count a number of specific characters in text
+ * @param1 {string} [text = ''] - text for counting characters
+ * @param2 {string} [toCount = ''] - character to count
+ * @returns {number} - number of character in text or -1 if it's not this character in text
  */
+
 const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;

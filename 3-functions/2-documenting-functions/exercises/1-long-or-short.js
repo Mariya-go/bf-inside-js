@@ -5,11 +5,11 @@
 console.log('-- begin --');
 
 /**
- * _
+ * This return estimation of length of text
  *
- * @_ {_} [_=_] - _
- * @_ {_} [_=_] - _
- * @_ {_} _
+ * @param1 {string} [text=''] - text for estimation
+ * @param2 {number} [cutoff=0] - number for estimate
+ * @returns {string} 'short' or 'long'
  */
 const longOrShort = (text = '', cutoff = 0) => {
   if (text.length < cutoff) {
