@@ -5,7 +5,9 @@
 console.log('-- begin --');
 
 /**
- *
+ * This skip each character with specified place (index). For example each 2 character. 
+ *@param1 {string} [text = ''] - text to skip characters
+ *@param2 {number} [toSkip = 1] - index of character to skip
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {

@@ -23,6 +23,20 @@ while (true) {
   }
 
   /* -- BEGIN: update sum and inputCount if input is a number, exit if it is "done" -- */
+  if (userInput.toLowerCase() === 'done') {
+    break;
+  } else {
+    const nextNumber = Number(userInput);
+
+    if (Number.isNaN(nextNumber)) {
+      alert('"' + userInput + '" is not a number, it has been ignored');
+      continue;
+    }
+
+    sum = sum + nextNumber;
+
+    inputCount = inputCount + 1;
+  }
   /* -- END -- */
 }
 

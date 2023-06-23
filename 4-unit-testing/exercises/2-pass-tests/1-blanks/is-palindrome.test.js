@@ -10,15 +10,14 @@
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let itIs = _;
-  for (let i = 0; i <= toCheck.length / 2; i++) {
-    const left = toCheck[_];
-    const right = toCheck[_];
-    if (_) {
-      itIs = _;
-      __;
-    }
+  let itIs = false;
+
+  const reversed = toCheck.split('').reverse().join('');
+
+  if (reversed === toCheck) {
+    itIs = true;
   }
+
   return itIs;
 };
 
