@@ -1,5 +1,8 @@
 /**
- *
+ * Sorts numbers from up to down and revers
+ * @param {array of numbers} [numbers = []] - array of numbers to sort
+ * @param {boolean} [up = true] - way of sorting: up or down
+ * @returns {array of numbers} - array with sorted numbers
  */
 export const sort = (numbers = [], up = true) => {
   // create a new array to avoid side-effects

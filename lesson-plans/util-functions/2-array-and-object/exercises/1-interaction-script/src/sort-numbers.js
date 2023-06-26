@@ -8,7 +8,7 @@ import { listItems } from './utils/list-items.js';
 //  this way the data is saved between each function call
 //  each time you interact, the code uses a reference to the same array in memory
 //    ! side effects !
-const numbers = [0, 1, -1, 2, -2, 3, -3];
+const numbers = [0, 10, -12, 2, -20, 3, -3];
 
 // === initialize the UI ===
 

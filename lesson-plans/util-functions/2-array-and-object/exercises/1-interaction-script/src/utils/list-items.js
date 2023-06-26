@@ -1,5 +1,5 @@
 /**
- * Converts an array if items into a string list.
+ * Converts an array of items into a string list.
  *
  * @param {any} [arr=[]] - The items to list.
  * @returns {string} A formatted list of items.
