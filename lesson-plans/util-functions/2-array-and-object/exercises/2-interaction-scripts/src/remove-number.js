@@ -24,7 +24,7 @@ const removeNumber = () => {
   for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
     if (number === toRemove) {
-      numbers.splice(i, i + 1);
+      numbers.splice(i, 1);
       i--;
     }
   }

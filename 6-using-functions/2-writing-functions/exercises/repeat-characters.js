@@ -17,9 +17,9 @@ while (Number.isNaN(repeats)) {
   }
 }
 
-let repeated = '';
-for (const char of text) {
-  repeated += repeatCharacters(char, repeats);
-}
+let repeated = repeatCharacters(text, repeats);
+// for (const char of text) {
+//   repeated += repeatCharacters(char, repeats);
+// }
 
 alert(`${text} --> ${repeated}`);
