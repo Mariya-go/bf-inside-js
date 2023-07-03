@@ -1,7 +1,12 @@
 import { readString, display } from '../../../lib/dom-io.js';
 
-import { _ } from './utils/_.js';
+import { pyramid } from './utils/pyramid.js';
 
-document.getElementById(__).addEventListener('click', () => {
+document.getElementById('pyramid-it').addEventListener('click', () => {
   debugger;
+  const toPyramid = readString('to-pyramid');
+
+  const pyramided = pyramid(toPyramid);
+
+  display('pyramided', pyramided);
 });

@@ -7,6 +7,7 @@
  * @param {string[]} arr - the array of strings
  * @returns {number[]} an array containing numbers that aren't NaN
  */
+debugger;
 export const numberyNumberify = (arr) => {
   // these work, you need to use them with the right array methods
   const isNotNaN = (entry) => {
@@ -17,7 +18,9 @@ export const numberyNumberify = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const allValidNumbers = arr._(_)._(_);
+  const allValidNumbers = arr.map(castToNumber).filter(isNotNaN);
 
   return allValidNumbers;
 };
+
+console.log(numberyNumberify(['1', '$%@#', '2', 'e', '3']));

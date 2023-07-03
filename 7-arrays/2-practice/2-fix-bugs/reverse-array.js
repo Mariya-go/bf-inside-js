@@ -4,6 +4,10 @@
  *
  */
 export const reverseArray = (arr = []) => {
-  const backwards = arr.reverse();
+  const newArray = [];
+  for (const item of arr) {
+    newArray.push(item);
+  }
+  const backwards = newArray.reverse();
   return backwards;
 };

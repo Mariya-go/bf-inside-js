@@ -7,7 +7,7 @@
  * @param {string} [toCount=''] - The character to count, must have length 1.
  * @returns {number} How many times the character appears in the text.
  */
-const countCharacter = (text = '', toCount = '') => {
+export const countCharacter = (text = '', toCount = '') => {
   if (toCount.length !== 1) {
     return -1;
   }
