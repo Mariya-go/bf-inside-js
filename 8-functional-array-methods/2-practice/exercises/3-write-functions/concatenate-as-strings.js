@@ -4,6 +4,16 @@
  * casts all values to a string and concatenates
  * returns a new array without modifying the original
  * @param {Array} arr - the array of values to filter
- * @returns {Array} - a new array with no strings
+ * @returns {string} - a concatenated string
  */
-export const concatenateAsStrings = (arr = []) => {};
+//debugger;
+export const concatenateAsStrings = (arr = []) => {
+  const string = (item) => {
+    return String(item);
+  };
+
+  return arr.map(string).reduce((acc, item) => acc + item, '');
+  //return arr.reduce((world, item) => world + String(item), '');
+};
+
+

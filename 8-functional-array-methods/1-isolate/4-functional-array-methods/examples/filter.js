@@ -17,25 +17,25 @@ const isEnthusiastic = (str) => {
 const _1_arr = [];
 const _1_expect = [];
 const _1_actual = _1_arr.filter(isEnthusiastic);
-console.assert(_1_actual === _1_expect, 'Test 1');
+console.assert(deepCompare(_1_actual, _1_expect), 'Test 1');
 
 // filters everything when there are no enthusiastic strings
 const _2_arr = ['', ':)', 'tree'];
 const _2_expect = [];
 const _2_actual = _2_arr.filter(isEnthusiastic);
-console.assert(_2_actual === _2_expect, 'Test 2');
+console.assert(deepCompare(_2_actual, _2_expect), 'Test 2');
 
 // keeps everything when there are only enthusiastic strings
 const _3_arr = ['! :(', 'hi!', '!?'];
 const _3_expect = ['! :(', 'hi!', '!?'];
 const _3_actual = _3_arr.filter(isEnthusiastic);
-console.assert(_3_actual === _3_expect, 'Test 3');
+console.assert(deepCompare(_3_actual, _3_expect), 'Test 3');
 
 // works with a mixed array
 const _4_arr = [':(', 'hi!', '!', ''];
 const _4_expect = ['hi!', '!'];
 const _4_actual = _4_arr.filter(isEnthusiastic);
-console.assert(_4_actual === _4_expect, 'Test 4');
+console.assert(deepCompare(_4_actual, _4_expect), 'Test 4');
 
 console.log('-- end --');
 

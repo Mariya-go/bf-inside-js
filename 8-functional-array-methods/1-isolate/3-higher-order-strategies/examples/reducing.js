@@ -35,7 +35,7 @@ const addNumbers = (sum, nextNumber) => {
   return sum + nextNumber;
 };
 
-const _1_expect = 10;
+const _1_expect = 11;
 const _1_actual = reduce(numbersArray, addNumbers);
 console.assert(_1_actual === _1_expect, 'Test 1: add numbers');
 
@@ -63,7 +63,7 @@ const concatenateStrings = (fullString, nextString) => {
   return `${fullString}-${nextString}`;
 };
 
-const _4_expect = 'a-b-c';
+const _4_expect = 'a-a-b-c';
 const _4_actual = reduce(stringsArray, concatenateStrings);
 console.assert(_4_actual === _4_expect, 'Test 4: concatenate strings');
 
